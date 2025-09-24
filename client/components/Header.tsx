@@ -54,21 +54,21 @@ export function Header() {
         </div>
 
         {/* Right side - Notification and Profile */}
-        <div className="flex items-center space-x-6">
+        <div className="flex items-center space-x-3 sm:space-x-6">
           {/* Notification Bell */}
-          <button className="relative p-3 bg-primary-25 rounded-full">
-            <Bell className="h-6 w-6 text-gray-800" />
+          <button className="relative p-2 sm:p-3 bg-primary-25 rounded-full">
+            <Bell className="h-5 w-5 sm:h-6 sm:w-6 text-gray-800" />
           </button>
 
           {/* User Profile */}
-          <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
-              <span className="text-white font-medium text-lg">K</span>
+          <div className="flex items-center space-x-2 sm:space-x-3">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+              <span className="text-white font-medium text-base sm:text-lg">K</span>
             </div>
-            <span className="text-gray-900 font-manrope font-bold text-xl">
+            <span className="hidden sm:block text-gray-900 font-manrope font-bold text-lg sm:text-xl">
               Kathryn
             </span>
-            <ChevronDown className="h-6 w-6 text-gray-800" />
+            <ChevronDown className="h-5 w-5 sm:h-6 sm:w-6 text-gray-800" />
           </div>
         </div>
       </div>
