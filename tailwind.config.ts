@@ -22,6 +22,10 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          25: "#F9FBFF",
+          400: "#99C0FF",
+          700: "#4D91FF",
+          900: "#0062FF",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -48,8 +52,8 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
+          DEFAULT: "#0F1222",
+          foreground: "#FCFCFD",
           primary: "hsl(var(--sidebar-primary))",
           "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
           accent: "hsl(var(--sidebar-accent))",
@@ -57,6 +61,23 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        gray: {
+          25: "#FCFCFD",
+          200: "#EAECF0",
+          500: "#667085",
+          700: "#344054",
+          800: "#1D2939",
+          900: "#101828",
+        },
+        success: {
+          50: "#ECFDF3",
+          700: "#027A48",
+        },
+      },
+      fontFamily: {
+        sans: ['Manrope', 'Inter', 'system-ui', 'sans-serif'],
+        manrope: ['Manrope', 'system-ui', 'sans-serif'],
+        inter: ['Inter', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
