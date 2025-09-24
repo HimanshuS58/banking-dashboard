@@ -2,14 +2,14 @@ import { Bell, ChevronDown } from "lucide-react";
 
 export function Header() {
   return (
-    <header className="bg-white border-b border-gray-200 px-8 py-6">
+    <header className="bg-white border-b border-gray-200 px-4 sm:px-6 lg:px-8 py-4 lg:py-6">
       <div className="flex items-center justify-between">
         {/* Greeting with sun icon */}
         <div className="flex items-center">
-          <h1 className="text-2xl font-manrope font-bold text-gray-900 mr-3">
+          <h1 className="text-xl sm:text-2xl font-manrope font-bold text-gray-900 mr-2 sm:mr-3">
             Good Morning
           </h1>
-          <div className="w-10 h-10 flex items-center justify-center">
+          <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center">
             <svg
               width="40"
               height="40"
