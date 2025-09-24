@@ -8,23 +8,25 @@ import { TransactionsTable } from "./TransactionsTable";
 export function DashboardLayout() {
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Sidebar */}
-      <Sidebar />
-      
+      {/* Sidebar - Hidden on mobile, shown on lg+ screens */}
+      <div className="hidden lg:block">
+        <Sidebar />
+      </div>
+
       {/* Main Content */}
-      <div className="ml-[300px]">
+      <div className="lg:ml-[300px]">
         {/* Header */}
         <Header />
-        
+
         {/* Dashboard Content */}
-        <main className="p-8">
+        <main className="p-4 sm:p-6 lg:p-8">
           {/* Top Section - Balance and Favorite Transfers */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mb-6 lg:mb-8">
             {/* Balance Card */}
             <div className="lg:col-span-1">
               <BalanceCard />
             </div>
-            
+
             {/* Favorite Transfers */}
             <div className="lg:col-span-1">
               <FavoriteTransfers />
@@ -32,7 +34,7 @@ export function DashboardLayout() {
           </div>
 
           {/* Middle Section - Insights Chart */}
-          <div className="mb-8">
+          <div className="mb-6 lg:mb-8">
             <InsightsChart />
           </div>
 
